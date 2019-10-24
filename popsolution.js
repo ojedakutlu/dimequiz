@@ -9,11 +9,11 @@ var solution=new Array()
 
 /*Below lists the phrases that will be randomly displayed if the user correctly answers the question. You may extend or shorten this list as desired*/
 var compliments=new Array()
-compliments[0]="Excellent! ¡Exelente!"
-compliments[1]="Very good! ¡Muy bien! "
-compliments[2]="Good job! ¡Buenísimo!"
-compliments[3]="Right on!! ¡¡Pura Vida!!"
-compliments[4]=""
+compliments[0]="Excellent! Exelente!"
+compliments[1]="Very good! Muy bien! "
+compliments[2]="Good job! Que bueno!"
+compliments[3]="Right on!! Pura Vida!!"
+
 
 
 
