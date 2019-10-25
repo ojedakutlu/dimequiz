@@ -31,13 +31,14 @@ h1 {
 
 <tr>
 <br>
+	<hr>
 	<h2><font color="white">The following quiz contains five questions regarding the animal and plant life in Costa Rica. You will have one chance to answer each question. If you answer correctly, the Solution box will let you know! Otherwise, the correct answer will be shown in the Solution box.</font></h2>
 
           <td width="100%"><div align="center"><center><p><textarea rows="10" name="thequestion"
           cols="69" wrap="virtual"></textarea></td>
         </tr>
                <tr align="center">
-          <td width="100%"><div align="center"><center><br><br><p><strong>Your response:</strong> <select
+          <td width="100%"><div align="center"><center><br><p><strong>Your response:</strong> <select
           name="theresponse" size="1" onChange="responses()">
             <option value="-----">----</option>
             <option value="a">a</option>
@@ -47,7 +48,7 @@ h1 {
           </select> <input type="button" value="&lt;&lt;Back" name="B1"
           onClick="if (whichone&gt;1){whichone--;generatequestions()}"> <input type="button"
           value="Next&gt;&gt;" name="B2"
-          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br><br><br><br>
+          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br><br>
 
 
 
@@ -56,7 +57,7 @@ h1 {
         </tr>
       
  <tr align="center">
-          <td width="50%"><div align="center"><center><br><br><p><strong>Solution: </strong><input
+          <td width="50%"><div align="center"><center><br><p><strong>Solution: </strong><input
           type="text" name="thesolution" size="35"></td>
         </tr>
 
