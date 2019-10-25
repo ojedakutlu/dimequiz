@@ -1,42 +1,60 @@
 <html>
+
 <head>
 
 <style>
 body {
 	background-image: url("tucan.jpg");
         background-repeat:no-repeat;
-       background-size:cover;
+        background-size:cover;
 } 
 
+
+#p4 {background-color:hsla(41,74%,78%,0.3);}
+
+h1 {background-color:hsla(41,74%,78%,0.3);}
+h2 {background-color:hsla(41,74%,78%,0.3);}
 </style>
 
 </head>
- 
- 
+
+<body>
+
 <div align="left">
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
   <tr>
     <td width="50%"><form method="POST" name="instantquiz">
       <table border="0" width="100%" cellspacing="0" cellpadding="0">
-        <caption><h1 style="background-color:rgba(355, 209, 71, 0.15);"><bold><font face="verdana" color="white"><strong>Costa Rican Flora and Fauna Quiz<br><br></bold></font></strong></caption></h1>
+        <br>
 
 <style>
 h1 {
   color: white;
+  font-family: Arial;  
   text-shadow: 2px 2px 4px #000000;
 }
+
+h2 {
+  color: white;
+  font-family: Arial;  
+  text-shadow: 2px 2px 4px #000000;
+}
+
 </style>
-        
 
+<h1 style="text-align:center;"><strong>Costa Rican Flora and Fauna Quiz</strong></h1>
 
-
-
+<h2 style="text-align:center;"><i>Take this short, five-question quiz to test your knowledge of the animals and plants of Costa Rica!"</i></h1>
+        <tr>
           <td width="100%"><div align="center"><center><p><textarea rows="10" name="thequestion"
           cols="69" wrap="virtual"></textarea></td>
         </tr>
-               <tr align="center">
-          <td width="100%"><div align="center"><center><br><br><p><strong>Your response:</strong> <select
+        <br>
+        <tr align="center">
+         <td width="100%"><div align="center"><center><br>
+
+<p id="p4"><strong>Your response:</strong><select
           name="theresponse" size="1" onChange="responses()">
             <option value="-----">----</option>
             <option value="a">a</option>
@@ -44,37 +62,19 @@ h1 {
             <option value="c">c</option>
             <option value="d">d</option>
           </select> 
-<br>
-
-    
-<br>
-<style>
-		  .button {
-  background-color: white;
-  border: none;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 2px;
-}
-.button1 {border-radius: 8px;}
-
-</style>
 
 
-<button class="button1"> <input type="button" value="&lt;&lt;Back" name="B1"
-          onClick="if (whichone&gt;1){whichone--;generatequestions()}"> </button> <button class="button1"> <input type="button"
+<input type="button" value="&lt;&lt;Back" name="B1"
+          onClick="if (whichone&gt;1){whichone--;generatequestions()}"> <input type="button"
           value="Next&gt;&gt;" name="B2"
-          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"> </button><br><br>
-  <tr align="center">
-          <h3><td width="50%"><div align="center"><center><br><br><p><strong>Solution: </strong><input
-          type="text" name="thesolution" size="35"></h3></td>
-        </tr>
+          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br>
+          <small><a href="#" onClick="whichone=1;generatequestions();return false"><br><b>Start Over</b></a> </small> </tr>
 
-
+<tr align="center">
+          <td width="50%"><div align="center"><center><p id="p4"><br><strong>Solution: </strong><input
+          type="text" name="thesolution" size="35"></td>
+        </tr>     
+</p>
  </table>
     </form>
     </td>
@@ -119,8 +119,5 @@ document.instantquiz.thesolution.value=compliments[Math.round(Math.random()*comp
 
 generatequestions()
 </script>
-
 </body>
-
-
 </html>
