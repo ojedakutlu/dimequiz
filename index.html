@@ -41,10 +41,24 @@ h1 {
             <option value="b">b</option>
             <option value="c">c</option>
             <option value="d">d</option>
-          </select> <input type="button" value="&lt;&lt;Back" name="B1"
-          onClick="if (whichone&gt;1){whichone--;generatequestions()}"> <input type="button"
+          </select> 
+		  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button {border-radius: 12px;}
+		  
+         <div class="button"> <input type="button" value="&lt;&lt;Back" name="B1"
+          onClick="if (whichone&gt;1){whichone--;generatequestions()}"> </div> <div class="button"><input type="button"
           value="Next&gt;&gt;" name="B2"
-          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"><br><br>
+          onClick="if (whichone&lt;=total){whichone++;generatequestions()}"> </div><br><br>
 
 
 
