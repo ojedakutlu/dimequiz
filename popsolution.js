@@ -1,5 +1,5 @@
 //change 5 to the total number of questions
-var total=5
+var total=10
 var question=new Array()
 for (i=1;i<=total+1;i++){
 temp="choice"+i+"=new Array()"
@@ -50,9 +50,43 @@ choice5[2]="550"
 choice5[3]="2000"
 choice5[4]="9000"
 
+question[6]="Which beach city in Costa Rica is famous for being the nesting ground of leatherback turtles?"
+choice5[1]="Junquillal"
+choice5[2]="Puntarenas"
+choice5[3]="Quepos"
+choice5[4]="Tamarindo"
+
+question[7]="Which species of monkey can not be found in Costa Rica?"
+choice5[1]="Rock macaques"
+choice5[2]="White headed capuchins"
+choice5[3]="Howler monkeys"
+choice5[4]="Spider monkeys"
+
+question[8]="Tapirs eat all of the following except..."
+choice5[1]="Fruit"
+choice5[2]="Twigs"
+choice5[3]="Ants"
+choice5[4]="Leaves"
+
+question[9]="Peccaries, the small, wild pigs found in Costa Rica live in heards of how many other peccaries?"
+choice5[1]="1-2"
+choice5[2]="3-30"
+choice5[3]="40-50"
+choice5[4]="None. They are solitary."
+
+question[10]="The name of the national flower and orchid of Costa Rica, the Guaria Morada, means what in English?"
+choice5[1]="Purple Orchid"
+choice5[2]="Purple Country Girl"
+choice5[3]="Purple Flower"
+choice5[4]="Purple Guards"
+
 solution[1]="a"
 solution[2]="d"
 solution[3]="c"
 solution[4]="c"
 solution[5]="d"
-
+solution[6]="d"
+solution[7]="a"
+solution[8]="c"
+solution[9]="b"
+solution[10]="b"
